@@ -1,0 +1,98 @@
+
+.app-container{
+    background-image: url(../Assets/backgrond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    overflow: hidden;
+    height: 100%;
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.board-dimentions {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+}
+.container-height{
+    height: 90%;
+}
+.scroll {
+    overflow-y: scroll;
+    background-color: rgba(208, 208, 208, 0.6);
+}
+.col {
+ width: 30vw;
+}
+.todo-card-details{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    margin: 8px;
+}
+.center-title{
+    text-align: center;
+}
+.login-card {
+   // width: 200vw;
+    min-height: auto;
+    max-width:90%;
+    max-height: fit-content;
+}
+.card {
+    border: none;
+    margin: 8px;
+}
+.todo-card:hover{
+    background-color: rgba(254, 239, 219, 0.7); 
+    //background-color: rgba(10, 6, 0, 0.2);
+}
+
+.todo-form{
+    background-color: white;
+    width: 60vw;
+    padding: 50px;
+}
+
+.flex {
+    display: flex
+}
+
+.flex-center {
+    align-self: center;
+}
+
+.border {
+    border: 1px solid #0000ff1c;
+}
+
+.form {
+    align-items: baseline;
+    margin: 30px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-end{
+    align-self: flex-end;
+}
+
+.input {
+    margin-left: 10px;
+}
+.title {
+    align-self: center;
+}
+.label {
+    font-weight: bold;
+}
