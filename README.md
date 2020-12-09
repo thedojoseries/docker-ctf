@@ -817,13 +817,13 @@ Connected to MongoDB!
 
 ## Capture The Flag
 
-In the Docker host, run `docker ps` and copy the ID of the database container. Then, run `docker logs <ID>`, where `<ID>` is the ID of the database container. In the logs, you will see a message saying `connection accepted from X.X.X.X:YYYY #Z (1 connection now open)` (you might see it more than once, but look at the last occurrence). Then right after, you should see a message starting with `received client metadata from X.X.X.X:YYYYY connX:`. The `received client metadata from (...)` message includes a payload (in JSON format). In this payload, you will see 3 versions in the format `<MAJOR>.<MINOR>.<PATCH>`. Get the `<MAJOR>` number of each version, multiply them and **you will have the flag for this task**. For example, if you had to multiply the minor number of the three versions below:
+In the Docker host, run `docker ps` and copy the ID of the database container. Then, run `docker logs <ID>`, where `<ID>` is the ID of the database container. In the logs, you will see a message saying `connection accepted from X.X.X.X:YYYY #Z (1 connection now open)` (you might see it more than once, but look at the last occurrence). Then right after, you should see a message starting with `received client metadata from X.X.X.X:YYYYY connX:`. The `received client metadata from (...)` message includes a payload (in JSON format). In this payload, you will see 3 versions in the format `<MAJOR>.<MINOR>.<PATCH>`. Get the `<MAJOR>` number of each version, multiply them and **you will have the flag for this task**. For example, if you had to multiply the major number of the three versions below:
 
 - 6.1.8
 - 8.12.6
 - 10.5.7
 
-The result would be `1 + 12 + 5 = 18`. Submit the correct flag using the format `DevSlopCTF{FLAG}` to earn **5005 points**!
+The result would be `6 * 8 * 10 = 480`. Submit the correct flag using the format `DevSlopCTF{FLAG}` to earn **5005 points**!
 
 # Task 10: Connecting the Frontend to the Backend (4500 Points)
 
