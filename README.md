@@ -57,7 +57,7 @@ As previously mentioned, you will need a [DockerHub](https://hub.docker.com/) ac
 
 Here's the diagram of the solution you will be building in this competition:
 
-<img src="https://docker-ctf-images.s3.amazonaws.com/architecture.jpeg" alt="architecture" width="650" height="550"/>
+![architecture](./images/architecture.jpeg)
 
 In summary:
 
