@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { history } from './history'
 import * as mutations from './mutations';
-const url = process.env.NODE_ENV === 'production' ? `` : `http://__BACKEND_IP__:7777`;
+const url = process.env.NODE_ENV === 'production' ? '' : `http://${backendIP}:7777`;
 
 export function* taskCreationSaga(){
     while (true){
