@@ -15,8 +15,7 @@ export class TodoApp extends React.Component{
     this.state = {
       tasks: []
     }
-    this.backendIP = process.env.BACKEND_IP || 'defaultIP';
-    this.apiUrl = `http://${this.backendIP}:7777`;
+    this.apiUrl = `http://__BACKEND_IP__:7777`;
   }
 
 
@@ -57,4 +56,3 @@ export class TodoApp extends React.Component{
   }
   
 }
-
